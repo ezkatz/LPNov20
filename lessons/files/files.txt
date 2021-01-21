@@ -1,0 +1,35 @@
+Today we reviewed operations with files (reading, writing, appending, closing).
+
+We used file_writer.py to create a file, called demofile.txt, in the same directory as our python files.  We then used file_reader.py to read the contents of demofile.txt and print the lines to the console.
+
+---
+
+File modes:
+	The way we specify which operation(s) we want to use comes from the "mode" variable that we use for the second argument of the "open" function (line 3 in file_reader.py or file_writer.py).
+
+	- We used 'a' to append our new text to the end of a file. Append mode does not delete the contents of a file if it already exists.
+	- We used 'w' to write our new text to a file, clearing any contents if the file previously existed.
+	- We used 'r' to read from a file.
+
+	All possible modes (such as trying to make a file to write to, but only if there isn't already a file of that name) are listed here: https://docs.python.org/3/library/functions.html#open
+
+---
+
+Reading:
+	We learned two different methods for reading from files.
+
+	- We used the read() function, which reads an entire file into a variable that we then were able to print out with a single line.
+	- We used the readline() function, which reads a single line at a time, advancing our cursor as we read. If we don't want to read the entire file all at once, this is a slower, more precise alternative.
+
+---
+
+Escape characters
+
+	We learned about escape characters. They are special types of strings.
+
+	- '\n' is a newline character
+	- '\t' is a tab
+
+	Using these can help format our code. For instance, if we run
+		print('hello\nworld')
+	we will print the two words "hello" and "world" on distinct lines
