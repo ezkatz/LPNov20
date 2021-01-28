@@ -1,0 +1,121 @@
+Loops
+
+--------------------
+
+- What are loops?
+A way to repeat a task in a condensed manner
+
+--------------------
+
+- Why use loops?
+Let's say we have a task that we want to repeat (such as printing some text).
+Rather than writing the task out over and over, we can instead use a loop to do
+the task for us the desired number of times
+
+For example
+
+print('hello world')
+print('hello world')
+print('hello world')
+
+can be expressed with a loop as
+
+for i in range(3):
+  print('hello world')
+
+Whereas the first method requires us to write a new line each time we want to
+call print, using a for loop requires only 2 lines, regardless of how many
+times we call print. So if we want to call print 5 times, the first method
+requires 5 lines, while the for loop method just requires changing the 3 to a 5
+
+Not only can loops be useful for condensing code, but also they can be helpful
+when we don't know exactly how many times we want to repeat. For instance, if
+we want to print out something a user-specified amount of times, with a loop we
+can do
+
+num_times = int(input('How many times?'))
+for i in range(num_times):
+  print('hello world')
+
+Another advantage of loops is using them in conjunction with arrays. Let's say
+we want to do something with each element of an array, such as print out all
+values of the array.
+
+By hand it is cumbersome to do so
+
+arr = ['the', 'quick', 'brown', 'fox']
+print(arr[0])
+print(arr[1])
+print(arr[2])
+print(arr[3])
+
+But with loops we can do it quickly
+
+arr = ['the', 'quick', 'brown', 'fox']
+for i in range(len(arr)):
+  print(arr[i])
+
+--------------------
+
+- What types of loops are there?
+There are two types of loops: for loops and while loops. Right now we will only
+cover for loops, but we will cover while loops later.
+
+-------------------------------------------------------------------------------
+
+For Loops
+
+- Syntax
+There are a couple ways to use for loops. The first is a ranged for loop
+This is equivalent to how we used for loops in JavaScript
+
+JavaScript:
+for (var i = 0; i < 5; i++) {
+  // do something
+}
+
+Python:
+for i in range(5):
+  // do something
+
+These two pieces of code are identical. They both specify a looping variable
+called i with an initial value of 0 that increases by 1 each time the loop runs
+
+You'll notice that here we use a function called range. Range is a function with
+a couple different forms, depending on what the arguments are. In the example
+above, we only give a single argument (the number 5). This causes i to start
+with the value 0 and to increment by 1 each time. The way to change the
+starting value and the amount to increment is as follows:
+
+range(start, stop, step) #by default, start is 0, and step is 1
+
+so calling
+
+for i in range(3, 13, 2):
+  // do something
+
+makes i start with a value of 3 and increase by 2 each time, stopping the loop
+when i reaches 13
+
+----------
+
+The second way to use a for loop is when looping over an "iterable". Types of
+"iterables" include files and lists.
+
+An example of looping over a list
+
+arr = [10, -7, 5, 1, 9]
+for num in arr:
+  print(str(arr))
+
+Here, rather than using range, we have different syntax:
+we make a variable called num that has a value that changes each iteration of
+the loop. On the first iteration, num has the first value in the list (10); on
+the second, it has the second value (-7); on the third, it has the third value
+(-7); and so on.
+
+And as we saw in class, we can use this syntax for files as well:
+
+file = open('in.txt', 'r')
+for line in file:
+  print(line)
