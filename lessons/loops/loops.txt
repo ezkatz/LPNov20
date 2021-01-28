@@ -119,3 +119,46 @@ And as we saw in class, we can use this syntax for files as well:
 file = open('in.txt', 'r')
 for line in file:
   print(line)
+
+-------------------------------------------------------------------------------
+
+While loops
+
+We'll get to this later
+
+
+
+
+-------------------------------------------------------------------------------
+
+Nested loops
+
+Nested loops are when you put a loop inside a loop.
+
+For example
+
+letters = ['a', 'b', 'c']
+numbers = ['1', '2', '3']
+
+for letter in letters:  # outer loop
+    for number in numbers:  # inner loop
+        print(letter + number)
+
+What happens as a result is that the inner loop runs in its entirety before we
+advance the outer loop. So we enter the outer loop (letter = 'a'), then we
+enter the inner loop (number = '1'), we print ('a1'), go to the next iteration
+of the inner loop (number = '2'), print ('a2'), and go to the next iteration of
+the inner loop (number = '3'), print ('a3'). Now that the inner loop is done,
+the outer loop goes to the next iteration (letter = 'b'), and so on. So we get
+a1
+a2
+a3
+b1
+b2
+b3
+c1
+c2
+c3
+
+
+
