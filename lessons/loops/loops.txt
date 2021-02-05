@@ -162,3 +162,61 @@ c3
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------
+Ok here's the secret:
+In python we don't actually use the need to use the range function, even
+if we want to know the index when we loop
+-----
+But what if we want to go backwards over a list?
+We can do this with splicing:
+numbers = [0, 10, 5, 24, 6]
+for number in numbers[::-1]:
+    print(number)
+-----
+But what if we want to loop over two lists and print out the values that have
+the same index?
+numbers = [ 5,   4,   3,   2,   1 ]
+letters = ['a', 'b', 'c', 'd', 'e']
+Our goal will be to print
+5a
+4b
+3c
+2d
+1e
+
+With range() we could do the following:
+for i in range(len(numbers)):
+    print(str(numbers[i]) + letters[i])
+
+But that is not "the python way" of doing things
+Instead, we could do the following:
+for i, number in enumerate(numbers):
+    print(str(number) + letters[i])
+
+We haven't yet learned what enumerate means or what the syntax of having two
+variables in the for loop line means, but we will get to those later.
+And even this still isn't "the python way" of doing things
+Instead, we could do:
+for number, letter in zip(numbers, letters):
+    print(str(number) + letter)
+
+This is "the python way" of solving the problem. To know what this means, we
+need to learn what the "zip" function does, and what "for number, letter"
+means, which we will get to soon.
