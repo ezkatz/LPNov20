@@ -1,0 +1,18 @@
+🍎, A, Apple, 50, 0.60
+🍌, B, Banana, 10, 0.30
+🍒, C, Cherries, 200, 0.05
+🥟, D, Dumpling, 18, 0.75
+🍆, E, Eggplant, 12, 1.05
+🍟, F, French Fries, 40, 1.40
+🍇, G, Grapes, 100, 0.04
+🍔, H, Hamburger, 7, 4.50
+🍨, I, Ice Cream, 12, 3.25
+🥝, K, Kiwi, 30, 0.75
+🍋, L, Lemon, 50, 0.62
+🥭, M, Mango, 20, 1.35
+🧅, O, Onion, 80, 0.55
+🍍, P, Pineapple, 25, 1.75
+🍚, R, Rice, 2000, 0.01
+🍓, S, Strawberry, 130, 0.15
+🍊, T, Tangerine, 90, 0.45
+🍉, W, Watermelon, 99, 2.50
