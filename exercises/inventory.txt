@@ -1,0 +1,18 @@
+Apple,500
+Banana,100
+Cherries,2000
+Dumpling,180
+Eggplant,120
+French Fries,400
+Grapes,1000
+Hamburger,70
+Ice Cream,120
+Kiwi,300
+Lemon,500
+Mango,200
+Onion,800
+Pineapple,250
+Rice,20000
+Strawberry,1300
+Tangerine,900
+Watermelon,990
