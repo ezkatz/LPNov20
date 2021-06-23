@@ -1,0 +1,19 @@
+Pineapple,300
+Strawberry,1191
+Banana,94
+Cherries,2100
+Hamburger,51
+Watermelon,713
+Lemon,485
+French Fries,400
+Onion,832
+Kiwi,213
+Tangerine,792
+Apple,460
+Mango,170
+Ice Cream,76
+Dumpling,216
+Rice,19800
+Eggplant,125
+Grapes,1090
+End of day
