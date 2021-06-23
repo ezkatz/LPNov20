@@ -1,0 +1,18 @@
+Apple,0.40
+Banana,0.20
+Cherries,0.02
+Dumpling,0.55
+Eggplant,0.75
+French Fries,0.40
+Grapes,0.01
+Hamburger,1.50
+Ice Cream,1.00
+Kiwi,0.65
+Lemon,0.40
+Mango,1.05
+Onion,0.25
+Pineapple,1.50
+Rice,0.005
+Strawberry,0.05
+Tangerine,0.30
+Watermelon,1.50
