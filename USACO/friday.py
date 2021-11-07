@@ -4,6 +4,7 @@ LANG: PYTHON3
 TASK: friday
 """
 
+# Number of days in each month
 months = [
   31, # January
   28, # February
@@ -19,6 +20,7 @@ months = [
   31, # December
 ]
 
+# For readability in get_days_in_month
 FEBRUARY = 1
 
 # Leap Year: %4 except century, but %400 is
